@@ -1,26 +1,130 @@
+{% load staticfiles %}
 <HTML>
 	<head>
 		<link href='http://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Arimo:700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+		<title>Avant Interiors</title>
 		<style>
+
 		html {
-			background-color:#C23B22;
+			background-repeat: repeat-y;
+			background-size:100%;
 		}
 		h1 {
 			text-align:center;
-			color:white;
+			color:rgb(50,50,50);
 			font-family: 'Righteous', cursive;
-			position:relative;
-			height:60px;
-			top:50%;
-			margin-top:-30px;
+/*			font-family: 'Arimo', sans-serif;*/
+			position:absolute;
 			font-size:40pt;
-			border-left:10px solid white;
-			border-right:10px solid white;
-			padding:0;
+			left:0px;
+			/*text-shadow: -3px 0px #F4D297;*/
+			/*background-color:rgba(33,34,28,0.5);*/
+			/*text-transform:uppercase;*/
+			padding-left:30px;
+			z-index:1;
+		}
+		h2,h3 {
+			font-family: 'Oswald', sans-serif;
+			color:white;
+			text-align:center;
+			position: relative;
+			top:20px;
+		}
+		h3 {
+			font-size:15pt;
+			text-align:left;
+		}
+		header {
+			background-color:white;
+			height:100px;
+			width:100%;
+			position:absolute;
+			top:0;
+			left:0;
+			z-index:1;
+			box-shadow: 0px 2px 5px #888888;
+		}
+		header p {
+			color:rgb(50,50,50);
+			/*font-family: 'Righteous', cursive;*/
+			font-family: 'Arimo', sans-serif;
+			position:absolute;
+			font-size:10pt;
+			right:20px;
+			z-index:1;
+			top:20px;
+		}
+		div#products{
+			position:absolute;
+			top:100px;
+			width:100%;
+			height:500px;
+			left:0;
+			background-color:#779ECB;
+
+		}
+		div#projects {
+			position:absolute;
+			top:600px;
+			left:0;
+			height:500px;
+			width:100%;
+			background-color:#B39EB5;
+		}
+		div#about {
+			position:absolute;
+			top:1100px;
+			left:0;
+			height:500px;
+			width:100%;
+			background-color:#FF6961;
+		}
+		div#products img, div#about img {
+			height:200px;
+			width:200px;
+			position:absolute;
+			left:13%;
+			top:30%;
+			-webkit-filter: invert(100%);
+		}
+		div#projects img {
+			height:250px;
+			width:250px;
+			position:absolute;
+			right:13%;
+			top:30%;
+			-webkit-filter: invert(100%);
 		}
 		</style>
 	</head>
-	<h1>
-	Hello World. This will be the site.
-	</h1>
+	<body>
+	<header>
+		<h1>Avant Interiors</h1>
+		<p>
+			Phone: 01242 2345253<br>
+			Email: info@avantinteriors.co.uk
+		</p>
+
+	</header>
+	<div id="products">
+		<h2>Products</h2>
+		<img src=" {% static 'images/screwdriver3.png' %}">
+{# 		<div>Icon made by Elegant Themes from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a></div> #}
+	</div>
+	<div id="projects">
+		<h2>Projects</h2>
+		<img src=" {% static 'images/projector4.png' %}">
+{# <div>Icon made by <a href="http://www.freepik.com" alt="Freepik.com" title="Freepik.com">Freepik</a> from <a href="http://www.flaticon.com/free-icon/projector-screen-tool_46215" title="Flaticon">www.flaticon.com</a></div> #}
+	</div>
+	<div id="about">
+		<h2>About</h2>
+		<img src=" {% static 'images/multiple25.png' %}">
+{# 		<div>Icon made by <a href="http://www.freepik.com" alt="Freepik.com" title="Freepik.com">Freepik</a> from <a href="http://www.flaticon.com/free-icon/multiple-users-silhouette_33308" title="Flaticon">www.flaticon.com</a></div> #}
+	</div>
+	</div>
+</body>
+
 </HTML>
