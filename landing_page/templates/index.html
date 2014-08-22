@@ -11,31 +11,22 @@
 		html {
 			background-repeat: repeat-y;
 			background-size:100%;
+			background-color:rgb(240,240,240);
 		}
 		h1 {
 			text-align:center;
 			color:rgb(50,50,50);
-			font-family: 'Righteous', cursive;
+			font-family: 'Oswald', sans-serif;
 /*			font-family: 'Arimo', sans-serif;*/
 			position:absolute;
-			font-size:40pt;
+			font-size:35pt;
 			left:0px;
 			/*text-shadow: -3px 0px #F4D297;*/
 			/*background-color:rgba(33,34,28,0.5);*/
 			/*text-transform:uppercase;*/
 			padding-left:30px;
 			z-index:1;
-		}
-		h2,h3 {
-			font-family: 'Oswald', sans-serif;
-			color:white;
-			text-align:center;
-			position: relative;
-			top:20px;
-		}
-		h3 {
-			font-size:15pt;
-			text-align:left;
+
 		}
 		header {
 			background-color:white;
@@ -55,48 +46,56 @@
 			font-size:10pt;
 			right:20px;
 			z-index:1;
-			top:20px;
+			bottom:0;
 		}
-		div#products{
+		div#slideshow {
 			position:absolute;
-			top:100px;
-			width:100%;
-			height:500px;
-			left:0;
-			background-color:#779ECB;
-
-		}
-		div#projects {
-			position:absolute;
-			top:600px;
-			left:0;
-			height:500px;
-			width:100%;
-			background-color:#B39EB5;
+			width:60%;
+			right:5%;
+			height:400px;
+			background-color:#FF6961;
+			top:150px;
 		}
 		div#about {
 			position:absolute;
-			top:1100px;
+			/*background-color:#779ECB;*/
+			top:150px;
+			width:25%;
+			left:5%;
+			height: 400px;
+			overflow:hidden;
+		}
+		div#about img {
+			width:50px;
+			display:inline;
+			position:absolute;
+			top:0;
 			left:0;
-			height:500px;
+			-webkit-filter: invert(20%);
+		}
+		div#about h2 {
+			font-family: 'Oswald', sans-serif;
+			color:rgb(50,50,50);
+			position:absolute;
+			text-align:left;
+			top:10px;
+			left:60px;
+			margin:0;
+		}
+		div#about p {
+			font-family: 'Arimo', sans-serif;
+			position:absolute;
+			font-size:10pt;
+			right:20px;
+			z-index:1;
+			top:60px;
+			text-align:justify;
+			color:rgb(50,50,50);
+		}
+		div#slideshow img {
+			position:absolute;
+			height:100%;
 			width:100%;
-			background-color:#FF6961;
-		}
-		div#products img, div#about img {
-			height:200px;
-			width:200px;
-			position:absolute;
-			left:13%;
-			top:30%;
-			-webkit-filter: invert(100%);
-		}
-		div#projects img {
-			height:250px;
-			width:250px;
-			position:absolute;
-			right:13%;
-			top:30%;
-			-webkit-filter: invert(100%);
 		}
 		</style>
 	</head>
@@ -107,24 +106,20 @@
 			Phone: 01242 2345253<br>
 			Email: info@avantiinteriors.co.uk
 		</p>
-
 	</header>
-	<div id="products">
-		<h2>Products</h2>
-		<img src=" {% static 'images/screwdriver3.png' %}">
-{# 		<div>Icon made by Elegant Themes from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a></div> #}
-	</div>
-	<div id="projects">
-		<h2>Projects</h2>
-		<img src=" {% static 'images/projector4.png' %}">
-{# <div>Icon made by <a href="http://www.freepik.com" alt="Freepik.com" title="Freepik.com">Freepik</a> from <a href="http://www.flaticon.com/free-icon/projector-screen-tool_46215" title="Flaticon">www.flaticon.com</a></div> #}
+
+	<div id="slideshow">
+		<img src="{% static 'images/1.jpg' %}">
 	</div>
 	<div id="about">
-		<h2>About</h2>
-		<img src=" {% static 'images/multiple25.png' %}">
-{# 		<div>Icon made by <a href="http://www.freepik.com" alt="Freepik.com" title="Freepik.com">Freepik</a> from <a href="http://www.flaticon.com/free-icon/multiple-users-silhouette_33308" title="Flaticon">www.flaticon.com</a></div> #}
+		<img src="{% static 'images/multiple25.png' %}">
+		<h2>About us</h2>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sed rhoncus mi. Nam ac dictum metus. Ut et aliquam leo. In sollicitudin sem ac nisl viverra tincidunt. Pellentesque euismod sit amet velit eget euismod. Pellentesque sagittis enim ac consectetur dictum. Nulla magna sapien, consectetur vestibulum molestie quis, molestie sed purus.<br><br>
+Nunc quis placerat diam. Curabitur vel molestie sem, sed semper massa. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc vehicula neque quis nisl elementum, vitae scelerisque metus lobortis. Donec cursus, magna sit amet tincidunt consectetur, justo velit efficitur nulla, sit amet tincidunt massa est nec leo. Vivamus at odio tellus. Vivamus venenatis porta rhoncus. Donec nulla lorem, cursus a suscipit a, dictum non nulla. Nullam ultrices blandit hendrerit. Vestibulum egestas dapibus tortor venenatis scelerisque.</p>
+		
 	</div>
-	</div>
+	
 </body>
 
 </HTML>
