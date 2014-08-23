@@ -1,9 +1,8 @@
 {% load staticfiles %}
+<!doctype html>
 <HTML>
 	<head>
-		<link href='http://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Arimo:700' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 		<title>Avanti Interiors</title>
 		<style>
@@ -48,14 +47,135 @@
 			z-index:1;
 			bottom:0;
 		}
-		div#slideshow {
-			position:absolute;
-			width:60%;
-			right:5%;
-			height:400px;
-			background-color:#FF6961;
-			top:150px;
-		}
+		#slides {
+      		display:none;
+      		position:absolute;
+      		top:150px;
+      		right:5%;
+      		width:60%;
+      		height:400px;
+    	}
+
+    body {
+      -webkit-font-smoothing: antialiased;
+      color: #232525;
+      padding-top:70px;
+    }
+
+    #slides {
+      display: none
+    }
+
+    #slides .slidesjs-navigation {
+      margin-top:3px;
+      position:absolute;
+      text-decoration: none;
+      font-family: 'Arimo', sans-serif;
+      z-index:10;
+    }
+
+    #slides .slidesjs-previous {
+      margin-right: 5px;
+      bottom:0;
+      left:0;
+    }
+
+    #slides .slidesjs-next {
+      margin-right: 5px;
+      bottom:0;
+      left:100px;
+    }
+
+    .slidesjs-pagination {
+      margin: 6px 0 0;
+      float: right;
+      list-style: none;
+      position:absolute;
+      bottom:0;
+      right:0;
+      z-index:10;
+    }
+
+    .slidesjs-pagination li {
+      margin: 0 1px;
+      display:inline;
+    }
+
+    .slidesjs-pagination li a {
+      display: block;
+      width: 13px;
+      height: 0;
+      padding-top: 13px;
+      background-image: url({% static 'images/pagination.png' %});
+      background-position: 0 0;
+      float: left;
+      overflow: hidden;
+    }
+
+    .slidesjs-pagination li a.active,
+    .slidesjs-pagination li a:hover.active {
+      background-position: 0 -13px
+    }
+
+    .slidesjs-pagination li a:hover {
+      background-position: 0 -26px
+    }
+
+    #slides a:link,
+    #slides a:visited {
+      color: #333
+    }
+
+    #slides a:hover,
+    #slides a:active {
+      color: #9e2020
+    }
+
+    .navbar {
+      overflow: hidden
+    }
+
+    #slides {
+      display: none
+    }
+
+    .container {
+      margin: 0 auto
+    }
+
+    /* For tablets & smart phones */
+    @media (max-width: 767px) {
+      body {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      .container {
+        width: auto
+      }
+    }
+
+    /* For smartphones */
+    @media (max-width: 480px) {
+      .container {
+        width: auto
+      }
+    }
+
+    /* For smaller displays like laptops */
+    @media (min-width: 768px) and (max-width: 979px) {
+      .container {
+        width: 724px
+      }
+    }
+
+    /* For larger displays */
+    @media (min-width: 1200px) {
+      .container {
+        width: 1170px
+      }
+    }
+  
+  
 		div#about {
 			position:absolute;
 			/*background-color:#779ECB;*/
@@ -98,6 +218,16 @@
 			width:100%;
 		}
 		</style>
+		 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  		<script src="{% static 'js/jquery.slides.min.js' %}"></script>
+  		 <script>
+		    $(function(){
+		      $("#slides").slidesjs({
+		        width: 600,
+		        height: 400
+		      });
+		    });
+  		</script>
 	</head>
 	<body>
 	<header>
@@ -107,10 +237,10 @@
 			Email: info@avantiinteriors.co.uk
 		</p>
 	</header>
-
-	<div id="slideshow">
-		<img src="{% static 'images/1.jpg' %}">
-	</div>
+  <div id="slides">
+    <img src="{% static 'images/1.jpg' %}">
+    <img src="http://placehold.it/940x528">
+  </div>
 	<div id="about">
 		<img src="{% static 'images/multiple25.png' %}">
 		<h2>About us</h2>
