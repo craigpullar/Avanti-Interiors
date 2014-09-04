@@ -4,195 +4,10 @@
 	<head>
 		<link href='http://fonts.googleapis.com/css?family=Arimo:700' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link href="{% static 'css/header.css'%}" rel='stylesheet' type='text/css'>
+    <link href="{% static 'css/slides.css'%}" rel='stylesheet' type='text/css'>
 		<title>Avanti Interiors</title>
 		<style>
-
-		html {
-			background-repeat: repeat-y;
-			background-size:100%;
-			background-color:rgb(240,240,240);
-		}
-		h1 {
-			text-align:center;
-			color:rgb(50,50,50);
-			font-family: 'Oswald', sans-serif;
-/*			font-family: 'Arimo', sans-serif;*/
-			position:absolute;
-			font-size:35pt;
-			left:0px;
-			/*text-shadow: -3px 0px #F4D297;*/
-			/*background-color:rgba(33,34,28,0.5);*/
-			/*text-transform:uppercase;*/
-			padding-left:30px;
-			z-index:1;
-
-		}
-		header {
-			background-color:white;
-			height:100px;
-			width:100%;
-			position:absolute;
-			top:0;
-			left:0;
-			z-index:1;
-/*			box-shadow: 0px 2px 5px #888888;*/
-		}
-		header p {
-			color:rgb(50,50,50);
-			/*font-family: 'Righteous', cursive;*/
-			font-family: 'Arimo', sans-serif;
-			position:absolute;
-			font-size:10pt;
-			right:20px;
-			z-index:1;
-			bottom:0;
-		}
-    header ul {
-      list-style:none;
-      font-family: 'Arimo', sans-serif;
-      color:rgb(50,50,50);
-      font-size:10pt;
-      position: absolute;
-      bottom:-5px;
-      left:360px;
-      padding:0;
-      border-left:1px solid rgb(50,50,50);
-    }
-    header li {
-     /* display:inline;*/
-      padding:5px;
-    }
-    header li:hover {
-      cursor: pointer;
-      border-left:5px solid rgb(50,50,50);
-    }
-		#slides {
-      		display:none;
-      		position:absolute;
-      		top:150px;
-      		right:5%;
-      		width:60%;
-      		height:400px;
-    	}
-
-    body {
-      -webkit-font-smoothing: antialiased;
-      color: #232525;
-      padding-top:70px;
-    }
-
-    #slides {
-      display: none
-    }
-
-    #slides .slidesjs-navigation {
-      margin-top:3px;
-      position:absolute;
-      text-decoration: none;
-      font-family: 'Arimo', sans-serif;
-      z-index:10;
-    }
-
-    #slides .slidesjs-previous {
-      margin-right: 5px;
-      bottom:0;
-      left:0;
-    }
-
-    #slides .slidesjs-next {
-      margin-right: 5px;
-      bottom:0;
-      left:100px;
-    }
-
-    .slidesjs-pagination {
-      margin: 6px 0 0;
-      float: right;
-      list-style: none;
-      position:absolute;
-      bottom:0;
-      right:0;
-      z-index:10;
-    }
-
-    .slidesjs-pagination li {
-      margin: 0 1px;
-      display:inline;
-    }
-
-    .slidesjs-pagination li a {
-      display: block;
-      width: 13px;
-      height: 0;
-      padding-top: 13px;
-      background-image: url({% static 'images/pagination.png' %});
-      background-position: 0 0;
-      float: left;
-      overflow: hidden;
-    }
-
-    .slidesjs-pagination li a.active,
-    .slidesjs-pagination li a:hover.active {
-      background-position: 0 -13px
-    }
-
-    .slidesjs-pagination li a:hover {
-      background-position: 0 -26px
-    }
-
-    #slides a:link,
-    #slides a:visited {
-      color: #333
-    }
-
-    #slides a:hover,
-    #slides a:active {
-      color: #9e2020
-    }
-
-    .navbar {
-      overflow: hidden
-    }
-
-    #slides {
-      display: none
-    }
-
-    .container {
-      margin: 0 auto
-    }
-
-    /* For tablets & smart phones */
-    @media (max-width: 767px) {
-      body {
-        padding-left: 20px;
-        padding-right: 20px;
-      }
-      .container {
-        width: auto
-      }
-    }
-
-    /* For smartphones */
-    @media (max-width: 480px) {
-      .container {
-        width: auto
-      }
-    }
-
-    /* For smaller displays like laptops */
-    @media (min-width: 768px) and (max-width: 979px) {
-      .container {
-        width: 724px
-      }
-    }
-
-    /* For larger displays */
-    @media (min-width: 1200px) {
-      .container {
-        width: 1170px
-      }
-    }
   
   
 		div#about {
@@ -231,32 +46,7 @@
 			text-align:justify;
 			color:rgb(50,50,50);
 		}
-		div#slideshow img {
-			position:absolute;
-			height:100%;
-			width:100%;
-		}
-    footer {
-      background-color:white;
-      height:50px;
-      width:100%;
-      position:absolute;
-      top:600px;
-      left:0;
-      z-index:1;
 
-    }
-    footer p {
-      color:rgb(50,50,50);
-      /*font-family: 'Righteous', cursive;*/
-      font-family: 'Arimo', sans-serif;
-      position:relative;
-      top:5px;
-      text-align:center;
-      font-size:9pt;
-      right:20px;
-      z-index:1;
-    }
 		</style>
 		 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
   		<script src="{% static 'js/jquery.slides.min.js' %}"></script>
@@ -271,15 +61,15 @@
 	</head>
 	<body>
 	<header>
-		<h1>Avanti Interiors</h1>
+		<h1><a href="/">Avanti Interiors</a></h1>
 		<p>
 			Phone: 01242 2345253<br>
 			Email: info@avantiinteriors.co.uk
 		</p>
     <ul>
-      <li>Office Partitioning</li>
-      <li>Suspended Ceilings</li>
-      <li>Other Services</li>
+      <li><a href="partitioning">Office Partitioning</a></li>
+      <li><a href="ceilings">Suspended Ceilings</a></li>
+      <li><a href="other">Other Services</a></li>
     </ul>
 	</header>
   <div id="slides">
@@ -294,9 +84,6 @@
 Nunc quis placerat diam. Curabitur vel molestie sem, sed semper massa. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc vehicula neque quis nisl elementum, vitae scelerisque metus lobortis. Donec cursus, magna sit amet tincidunt consectetur, justo velit efficitur nulla, sit amet tincidunt massa est nec leo. Vivamus at odio tellus. Vivamus venenatis porta rhoncus. Donec nulla lorem, cursus a suscipit a, dictum non nulla. Nullam ultrices blandit hendrerit. Vestibulum egestas dapibus tortor venenatis scelerisque.</p>
 		
 	</div>
-<footer>
-  <p>&copy; Avanti Interiors 2014</p>
-</footer>
 </body>
 
 </HTML>

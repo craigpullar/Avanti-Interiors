@@ -4,3 +4,15 @@ from django.shortcuts import render
 def index(request):
 	template = 'index.html'
 	return render(request,template)
+
+def partitioning(request):
+	template = 'partitioning.html'
+	return render(request,template)
+
+def ceilings(request):
+	template = 'ceilings.html'
+	return render(request,template)
+
+def other(request):
+	template='other.html'
+	return render(request,template)

@@ -1,0 +1,95 @@
+		html {
+			background-repeat: repeat-y;
+			background-size:100%;
+			background-color:rgb(240,240,240);
+		}
+		h1 {
+			text-align:center;
+			color:rgb(50,50,50);
+			font-family: 'Oswald', sans-serif;
+/*			font-family: 'Arimo', sans-serif;*/
+			position:absolute;
+			font-size:35pt;
+			left:0px;
+			/*text-shadow: -3px 0px #F4D297;*/
+			/*background-color:rgba(33,34,28,0.5);*/
+			/*text-transform:uppercase;*/
+			padding-left:30px;
+			z-index:1;
+		}
+    h1 a{
+      color:rgb(50,50,50);
+      font-family: 'Oswald', sans-serif;
+      text-decoration:none;
+    }
+		header {
+			background-color:white;
+			height:100px;
+			width:100%;
+			position:absolute;
+			top:0;
+			left:0;
+			z-index:1;
+/*			box-shadow: 0px 2px 5px #888888;*/
+		}
+		header p {
+			color:rgb(50,50,50);
+			/*font-family: 'Righteous', cursive;*/
+			font-family: 'Arimo', sans-serif;
+			position:absolute;
+			font-size:10pt;
+			right:20px;
+			z-index:1;
+			bottom:0;
+		}
+    header ul {
+      list-style:none;
+      font-family: 'Arimo', sans-serif;
+      color:rgb(50,50,50);
+      font-size:10pt;
+      position: absolute;
+      bottom:-5px;
+      left:360px;
+      padding:0;
+      border-left:1px solid rgb(50,50,50);
+    }
+    header li {
+     /* display:inline;*/
+      padding:5px;
+    }
+    header li a{
+      font-family: 'Arimo', sans-serif;
+      color:rgb(50,50,50);
+      font-size:10pt;
+      text-decoration: none;
+    }
+    header li:hover {
+      cursor: pointer;
+      border-left:5px solid rgb(50,50,50);
+    }
+
+    header li#active {
+      border-left:5px solid rgb(50,50,50);
+    }
+		
+    footer {
+      background-color:white;
+      height:50px;
+      width:100%;
+      position:absolute;
+      top:600px;
+      left:0;
+      z-index:1;
+
+    }
+    footer p {
+      color:rgb(50,50,50);
+      /*font-family: 'Righteous', cursive;*/
+      font-family: 'Arimo', sans-serif;
+      position:relative;
+      top:5px;
+      text-align:center;
+      font-size:9pt;
+      right:20px;
+      z-index:1;
+    }
