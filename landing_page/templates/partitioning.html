@@ -6,6 +6,60 @@
 		<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 		<link href="{% static 'css/header.css'%}" rel='stylesheet' type='text/css'>
 		<title>Avanti Interiors</title>
+		<style>
+			div#infoBox1 {
+				position:absolute;
+				/*background-color:#779ECB;*/
+				top:150px;
+				width:25%;
+				left:5%;
+				height: 400px;
+				overflow:hidden;
+			}
+			div.infoBox p {
+				font-family: 'Arimo', sans-serif;
+				position:absolute;
+				font-size:10pt;
+				right:20px;
+				z-index:1;
+				top:60px;
+				text-align:justify;
+				color:rgb(50,50,50);
+			}
+			div#infoBox1 h2 {
+				font-family: 'Oswald', sans-serif;
+				color:rgb(50,50,50);
+				position:absolute;
+				text-align:left;
+				top:10px;
+				left:60px;
+				margin:0;
+			}
+			div#infoBox2 {
+								position:absolute;
+				/*background-color:#779ECB;*/
+				top:550px;
+				width:25%;
+				right:5%;
+				height: 450px;
+				overflow:hidden;
+			}
+			img#image1 {
+	      		position:absolute;
+	      		top:150px;
+	      		right:5%;
+	      		width:60%;
+	      		height:400px;
+			}
+			img#image2 {
+				position:absolute;
+	      		top:600px;
+	      		left:5%;
+	      		width:60%;
+	      		height:400px;
+	      		padding-bottom:100px;
+			}
+		</style>
 	</head>
 	<body>
 	<header>
@@ -20,6 +74,23 @@
       <li><a href="other">Other Services</a></li>
     </ul>
 	</header>
+	<div id="infoBox1" class="infoBox">
+		<h2>Office Partitioning</h2>
+		<p>
+		Nullam a lorem nulla. Nulla ornare, massa id laoreet hendrerit, eros arcu lacinia nunc, porta fringilla magna magna ut felis. Sed ut facilisis justo. Phasellus auctor rhoncus lacus, at aliquet ligula finibus nec. Nunc feugiat pretium ipsum, a tristique eros elementum sed. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent blandit mollis imperdiet. In porttitor elementum ligula, nec malesuada tellus pharetra at. Mauris et vehicula quam. Aliquam viverra nulla ac luctus rhoncus. Praesent lacus dolor, euismod eget tristique eu, facilisis sed quam. Nunc fringilla fermentum magna a accumsan. Sed rutrum nisi in nisl congue, tempus commodo dui lacinia. Mauris placerat turpis egestas iaculis tincidunt.<br>
+		<br>
+		Nulla at mi ante. Quisque lacinia, magna nec sagittis iaculis, mi dolor finibus augue, non lacinia sapien tellus sit amet dolor. Nunc lacinia eu risus eu commodo. Cras et tincidunt lacus. Fusce vestibulum iaculis nibh, dapibus fermentum erat sodales id. Nullam id arcu elit. Proin tristique mi justo. Integer viverra pretium congue. Sed et porta ex, eu maximus eros. Aenean vulputate euismod risus a congue.
+		</p>
+	</div>
+	<img id="image1" src="{% static 'images/1.jpg' %}">
+	<div id="infoBox2" class="infoBox">
+		<p>
+		Nullam a lorem nulla. Nulla ornare, massa id laoreet hendrerit, eros arcu lacinia nunc, porta fringilla magna magna ut felis. Sed ut facilisis justo. Phasellus auctor rhoncus lacus, at aliquet ligula finibus nec. Nunc feugiat pretium ipsum, a tristique eros elementum sed. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent blandit mollis imperdiet. In porttitor elementum ligula, nec malesuada tellus pharetra at. Mauris et vehicula quam. Aliquam viverra nulla ac luctus rhoncus. Praesent lacus dolor, euismod eget tristique eu, facilisis sed quam. Nunc fringilla fermentum magna a accumsan. Sed rutrum nisi in nisl congue, tempus commodo dui lacinia. Mauris placerat turpis egestas iaculis tincidunt.<br>
+		<br>
+		Nulla at mi ante. Quisque lacinia, magna nec sagittis iaculis, mi dolor finibus augue, non lacinia sapien tellus sit amet dolor. Nunc lacinia eu risus eu commodo. Cras et tincidunt lacus. Fusce vestibulum iaculis nibh, dapibus fermentum erat sodales id. Nullam id arcu elit. Proin tristique mi justo. Integer viverra pretium congue. Sed et porta ex, eu maximus eros. Aenean vulputate euismod risus a congue.
+		</p>
+	</div>
+	<img id="image2" src="{% static 'images/element.jpg' %}">
 </body>
 
 </HTML>
