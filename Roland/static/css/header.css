@@ -1,6 +1,4 @@
 		html {
-			background-repeat: repeat-y;
-			background-size:100%;
 			background-color:rgb(240,240,240);
 		}
 		h1 {
@@ -16,6 +14,7 @@
 			/*text-transform:uppercase;*/
 			padding-left:30px;
 			z-index:1;
+      bottom:5px;
 		}
     h1 a{
       color:rgb(50,50,50);
@@ -40,7 +39,7 @@
 			font-size:10pt;
 			right:20px;
 			z-index:1;
-			bottom:0;
+			bottom:10px;
 		}
     header ul {
       list-style:none;
@@ -48,7 +47,7 @@
       color:rgb(50,50,50);
       font-size:10pt;
       position: absolute;
-      bottom:-5px;
+      top:15px;
       left:360px;
       padding:0;
       border-left:1px solid rgb(50,50,50);
@@ -71,23 +70,35 @@
     header li#active {
       border-left:5px solid rgb(50,50,50);
     }
-		
+		    * {
+      margin: 0;
+    }
+    html, body {
+      height: 100%;
+    }
+    .wrapper {
+      min-height: 100%;
+      margin: 0 auto -100px; /* the bottom margin is the negative value of the footer's height */
+    }
+    .wrapper:after {
+        content: "";
+    display: block;
+    }
+    footer, .wrapper:after{
+      height: 100px; /* '.push' must be the same height as 'footer' */
+    }
     footer {
       background-color:white;
-      height:50px;
+      text-align:center;
       width:100%;
-      position:absolute;
-      top:600px;
-      left:0;
-      z-index:1;
-
+      z-index:2;
     }
     footer p {
       color:rgb(50,50,50);
       /*font-family: 'Righteous', cursive;*/
       font-family: 'Arimo', sans-serif;
       position:relative;
-      top:5px;
+      top:45px;
       text-align:center;
       font-size:9pt;
       right:20px;

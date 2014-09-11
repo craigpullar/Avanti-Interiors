@@ -5,63 +5,14 @@
 		<link href='http://fonts.googleapis.com/css?family=Arimo:700' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 		<link href="{% static 'css/header.css'%}" rel='stylesheet' type='text/css'>
+		<link href="{% static 'css/infoLayout.css'%}" rel='stylesheet' type='text/css'>
 		<title>Avanti Interiors</title>
 		<style>
-			div#infoBox1 {
-				position:absolute;
-				/*background-color:#779ECB;*/
-				top:150px;
-				width:25%;
-				left:5%;
-				height: 400px;
-				overflow:hidden;
-			}
-			div.infoBox p {
-				font-family: 'Arimo', sans-serif;
-				position:absolute;
-				font-size:10pt;
-				right:20px;
-				z-index:1;
-				top:60px;
-				text-align:justify;
-				color:rgb(50,50,50);
-			}
-			div#infoBox1 h2 {
-				font-family: 'Oswald', sans-serif;
-				color:rgb(50,50,50);
-				position:absolute;
-				text-align:left;
-				top:10px;
-				left:60px;
-				margin:0;
-			}
-			div#infoBox2 {
-								position:absolute;
-				/*background-color:#779ECB;*/
-				top:550px;
-				width:25%;
-				right:5%;
-				height: 450px;
-				overflow:hidden;
-			}
-			img#image1 {
-	      		position:absolute;
-	      		top:150px;
-	      		right:5%;
-	      		width:60%;
-	      		height:400px;
-			}
-			img#image2 {
-				position:absolute;
-	      		top:600px;
-	      		left:5%;
-	      		width:60%;
-	      		height:400px;
-	      		padding-bottom:100px;
-			}
+
 		</style>
 	</head>
 	<body>
+	<div class="wrapper">
 	<header>
 		<h1><a href="/">Avanti Interiors</a></h1>
 		<p>
@@ -91,6 +42,10 @@
 		</p>
 	</div>
 	<img id="image2" src="{% static 'images/element.jpg' %}">
+	</div>
+	<footer>
+    	<p>Avanti Interiors &copy; 2014</p>
+  	</footer>
 </body>
 
 </HTML>

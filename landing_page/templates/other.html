@@ -7,7 +7,66 @@
 		<link href="{% static 'css/header.css'%}" rel='stylesheet' type='text/css'>
 		<title>Avanti Interiors</title>
 	</head>
+	<style>
+		div.infoBox p {
+			font-family: 'Arimo', sans-serif;
+			position:absolute;
+			font-size:10pt;
+			right:20px;
+			z-index:1;
+			top:60px;
+			text-align:justify;
+			color:rgb(50,50,50);
+		}
+		div.infoBox h2 {
+			font-family: 'Oswald', sans-serif;
+			color:rgb(50,50,50);
+			text-align:center;
+			margin-left:auto;
+			margin-right:auto;
+		}
+		div.infoBox{
+			width:25%;
+			height:300px;
+			overflow:hidden;
+			position:absolute;
+			top:450px;
+			z-index:1;
+			left:5%;
+		}
+		div#mezzanine {
+			left:37.5%;
+		}
+		div#flooring {
+			right:5%;
+			left:auto;
+		}
+		div#plumbing {
+			top:150px;
+			width:90%;
+			left:5%;
+		}
+		div#electrics {
+			top:800px;
+			left:37.5%;
+			padding-bottom:50px;
+		}
+		div#office {
+			right:5%;
+			left:auto;
+			top:800px;
+			padding-bottom:50px;
+		}
+		div#decoration {
+			top:800px;
+			padding-bottom:50px;
+		}
+		body,html {
+			height:1250px;
+		}
+	</style>
 	<body>
+	<div class="wrapper">
 	<header>
 		<h1><a href="/">Avanti Interiors</a></h1>
 		<p>
@@ -20,7 +79,39 @@
       <li id="active"><a href="other">Other Services</a></li>
     </ul>
 	</header>
-
+	<div class="infoBox" id="drylining">
+		<h2>Drylining</h2>
+		<p>Proin cursus, turpis vitae malesuada tempor, quam sapien auctor ipsum, non iaculis sem ex nec dui. Nullam dolor sapien, sollicitudin sed purus sit amet, elementum iaculis purus. Etiam vulputate metus id ligula accumsan varius. Praesent semper sit amet diam quis lobortis. Sed sit amet pharetra libero. Curabitur aliquam hendrerit iaculis. Integer at dui interdum, egestas risus ac, venenatis nisi. Fusce et justo vel tellus consectetur facilisis sed tincidunt lorem. Donec eget faucibus nibh. Cras vel velit vestibulum, convallis tortor eget, suscipit diam. Vivamus rutrum, nulla eu luctus pretium, nisl tortor viverra neque, faucibus feugiat nulla erat vel eros. Nulla facilisi. Etiam sed mi diam. Aliquam tincidunt vulputate turpis, ut mattis sem pharetra vitae.</p>
+	</div>
+	<div class="infoBox" id="mezzanine">
+		<h2>Mezzanine Floors</h2>
+		<p>Proin cursus, turpis vitae malesuada tempor, quam sapien auctor ipsum, non iaculis sem ex nec dui. Nullam dolor sapien, sollicitudin sed purus sit amet, elementum iaculis purus. Etiam vulputate metus id ligula accumsan varius. Praesent semper sit amet diam quis lobortis. Sed sit amet pharetra libero. Curabitur aliquam hendrerit iaculis. Integer at dui interdum, egestas risus ac, venenatis nisi. Fusce et justo vel tellus consectetur facilisis sed tincidunt lorem. Donec eget faucibus nibh. Cras vel velit vestibulum, convallis tortor eget, suscipit diam. Vivamus rutrum, nulla eu luctus pretium, nisl tortor viverra neque, faucibus feugiat nulla erat vel eros. Nulla facilisi. Etiam sed mi diam. Aliquam tincidunt vulputate turpis, ut mattis sem pharetra vitae.</p>
+	</div>
+	<div class="infoBox" id="flooring">
+		<h2>Flooring</h2>
+		<p>Proin cursus, turpis vitae malesuada tempor, quam sapien auctor ipsum, non iaculis sem ex nec dui. Nullam dolor sapien, sollicitudin sed purus sit amet, elementum iaculis purus. Etiam vulputate metus id ligula accumsan varius. Praesent semper sit amet diam quis lobortis. Sed sit amet pharetra libero. Curabitur aliquam hendrerit iaculis. Integer at dui interdum, egestas risus ac, venenatis nisi. Fusce et justo vel tellus consectetur facilisis sed tincidunt lorem. Donec eget faucibus nibh. Cras vel velit vestibulum, convallis tortor eget, suscipit diam. Vivamus rutrum, nulla eu luctus pretium, nisl tortor viverra neque, faucibus feugiat nulla erat vel eros. Nulla facilisi. Etiam sed mi diam. Aliquam tincidunt vulputate turpis, ut mattis sem pharetra vitae.</p>
+	</div>
+	<div class="infoBox" id="plumbing">
+		<h2>Plumbing</h2>
+		<p>Proin cursus, turpis vitae malesuada tempor, quam sapien auctor ipsum, non iaculis sem ex nec dui. Nullam dolor sapien, sollicitudin sed purus sit amet, elementum iaculis purus. Etiam vulputate metus id ligula accumsan varius. Praesent semper sit amet diam quis lobortis. Sed sit amet pharetra libero. Curabitur aliquam hendrerit iaculis. Integer at dui interdum, egestas risus ac, venenatis nisi. Fusce et justo vel tellus consectetur facilisis sed tincidunt lorem. Donec eget faucibus nibh. Cras vel velit vestibulum, convallis tortor eget, suscipit diam. Vivamus rutrum, nulla eu luctus pretium, nisl tortor viverra neque, faucibus feugiat nulla erat vel eros. Nulla facilisi. Etiam sed mi diam. Aliquam tincidunt vulputate turpis, ut mattis sem pharetra vitae.<br>
+		<br>Nullam varius diam in risus dignissim pellentesque. Vestibulum semper enim sed dignissim dapibus. Sed in justo nec risus tincidunt rutrum. Phasellus feugiat lorem libero, et finibus dui bibendum in. Donec lobortis, ligula id volutpat mattis, lacus augue lacinia lacus, a euismod augue ante nec neque. Nam vitae massa vehicula, consectetur ligula eget, sodales neque. In viverra efficitur sollicitudin. Suspendisse pulvinar tellus id urna venenatis elementum. Cras ut neque fringilla, aliquet nisl et, placerat odio. Integer fermentum, neque vel aliquam convallis, velit dui euismod magna, id facilisis leo erat id odio. Vestibulum viverra dolor quis placerat fringilla. Nullam at sagittis massa, ut imperdiet ante. Vivamus in porta elit, sit amet aliquet augue. Morbi laoreet magna vel tristique fermentum.</p>
+	</div>
+	<div class="infoBox" id="electrics">
+		<h2>Electrics and Data</h2>
+		<p>Proin cursus, turpis vitae malesuada tempor, quam sapien auctor ipsum, non iaculis sem ex nec dui. Nullam dolor sapien, sollicitudin sed purus sit amet, elementum iaculis purus. Etiam vulputate metus id ligula accumsan varius. Praesent semper sit amet diam quis lobortis. Sed sit amet pharetra libero. Curabitur aliquam hendrerit iaculis. Integer at dui interdum, egestas risus ac, venenatis nisi. Fusce et justo vel tellus consectetur facilisis sed tincidunt lorem. Donec eget faucibus nibh. Cras vel velit vestibulum, convallis tortor eget, suscipit diam. Vivamus rutrum, nulla eu luctus pretium, nisl tortor viverra neque, faucibus feugiat nulla erat vel eros. Nulla facilisi. Etiam sed mi diam. Aliquam tincidunt vulputate turpis, ut mattis sem pharetra vitae.</p>
+	</div>
+	<div class="infoBox" id="office">
+		<h2>Office Furniture</h2>
+		<p>Proin cursus, turpis vitae malesuada tempor, quam sapien auctor ipsum, non iaculis sem ex nec dui. Nullam dolor sapien, sollicitudin sed purus sit amet, elementum iaculis purus. Etiam vulputate metus id ligula accumsan varius. Praesent semper sit amet diam quis lobortis. Sed sit amet pharetra libero. Curabitur aliquam hendrerit iaculis. Integer at dui interdum, egestas risus ac, venenatis nisi. Fusce et justo vel tellus consectetur facilisis sed tincidunt lorem. Donec eget faucibus nibh. Cras vel velit vestibulum, convallis tortor eget, suscipit diam. Vivamus rutrum, nulla eu luctus pretium, nisl tortor viverra neque, faucibus feugiat nulla erat vel eros. Nulla facilisi. Etiam sed mi diam. Aliquam tincidunt vulputate turpis, ut mattis sem pharetra vitae.</p>
+	</div>
+	<div class="infoBox" id="decoration">
+		<h2>Decoration</h2>
+		<p>Proin cursus, turpis vitae malesuada tempor, quam sapien auctor ipsum, non iaculis sem ex nec dui. Nullam dolor sapien, sollicitudin sed purus sit amet, elementum iaculis purus. Etiam vulputate metus id ligula accumsan varius. Praesent semper sit amet diam quis lobortis. Sed sit amet pharetra libero. Curabitur aliquam hendrerit iaculis. Integer at dui interdum, egestas risus ac, venenatis nisi. Fusce et justo vel tellus consectetur facilisis sed tincidunt lorem. Donec eget faucibus nibh. Cras vel velit vestibulum, convallis tortor eget, suscipit diam. Vivamus rutrum, nulla eu luctus pretium, nisl tortor viverra neque, faucibus feugiat nulla erat vel eros. Nulla facilisi. Etiam sed mi diam. Aliquam tincidunt vulputate turpis, ut mattis sem pharetra vitae.</p>
+	</div>
+</div>
+	<footer>
+    <p>Avanti Interiors &copy; 2014</p>
+  </footer>
 </body>
 
 </HTML>
