@@ -8,20 +8,13 @@
 		<link href="{% static 'css/infoLayout.css'%}" rel='stylesheet' type='text/css'>
 		<title>Avanti Interiors</title>
 	</head>
+
 	<body>
 	<div class="wrapper">
-	<header>
-		<h1><a href="/">Avanti Interiors</a></h1>
-		<p>
-			Phone: 07738 628255<br>
-			Email: info@avantiinteriors.co.uk
-		</p>
-    <ul>
-      <li><a href="partitioning">Office Partitioning</a></li>
-      <li id="active"><a href="ceilings">Suspended Ceilings</a></li>
-      <li><a href="other">Other Services</a></li>
-    </ul>
-	</header>
+		{% include 'header.html' %}
+	<script>
+		document.getElementById('ceilings').id = "active";
+	</script>
 	<div id="infoBox1" class="infoBox">
 		<h2>Ceilings</h2>
 		<p>

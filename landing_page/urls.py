@@ -6,4 +6,5 @@ urlpatterns = patterns('',
     url(r'^partitioning$',views.partitioning, name='partitioning'),
     url(r'^ceilings$',views.ceilings, name='celings'),
     url(r'^other$',views.other, name='other'),
+    url(r'^endorsements$',views.endorsements, name='endorsements'),
 )

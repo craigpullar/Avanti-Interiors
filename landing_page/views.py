@@ -16,3 +16,7 @@ def ceilings(request):
 def other(request):
 	template='other.html'
 	return render(request,template)
+
+def endorsements(request):
+	template='endorsements.html'
+	return render(request,template)
