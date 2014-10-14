@@ -4,7 +4,6 @@
 				top:150px;
 				width:25%;
 				left:5%;
-				height: 400px;
 				overflow:hidden;
 			}
 			div.infoBox p {
@@ -29,7 +28,7 @@
 			}
 			img#image1 {
 	      		position:absolute;
-	      		top:150px;
+	      		top:200px;
 	      		right:5%;
 	      		width:60%;
 	      		height:400px;
