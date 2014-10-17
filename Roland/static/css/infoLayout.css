@@ -1,0 +1,40 @@
+			div#infoBox1 {
+				position:relative;
+				/*background-color:#779ECB;*/
+				top:150px;
+				width:25%;
+				left:5%;
+				overflow:hidden;
+				height:500px;
+			}
+			div.infoBox p {
+				font-family: 'Arimo', sans-serif;
+				position:absolute;
+				font-size:10pt;
+				right:20px;
+				z-index:1;
+				top:60px;
+				text-align:justify;
+				color:rgb(50,50,50);
+				line-height:150%;
+			}
+			div#infoBox1 h2 {
+				font-family: 'Oswald', sans-serif;
+				color:rgb(50,50,50);
+				position:absolute;
+				text-align:center;
+				top:10px;
+				margin:0;
+				width: 100%;
+			}
+			img#image1 {
+	      		position:absolute;
+	      		top:220px;
+	      		right:5%;
+	      		width:60%;
+	      		height:400px;
+			}
+
+			body,html {
+				height:750px;
+			}

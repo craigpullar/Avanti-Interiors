@@ -1,0 +1,83 @@
+{% load staticfiles %}
+<!doctype html>
+<HTML>
+	<head>
+		<link href='http://fonts.googleapis.com/css?family=Arimo:700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link href="{% static 'css/header.css'%}" rel='stylesheet' type='text/css'>
+    <link href="{% static 'css/slides.css'%}" rel='stylesheet' type='text/css'>
+		<title>Avanti Interiors</title>
+		<style>
+
+
+		div#about {
+			position:absolute;
+			/*background-color:#779ECB;*/
+			top:150px;
+			width:25%;
+			left:5%;
+			height: 400px;
+			overflow:hidden;
+			z-index:1;
+		}
+		div#about img {
+			width:50px;
+			display:inline;
+			position:absolute;
+			top:0;
+			left:0;
+			-webkit-filter: invert(20%);
+		}
+		div#about h2 {
+			font-family: 'Oswald', sans-serif;
+			color:rgb(50,50,50);
+			position:absolute;
+			text-align:left;
+			top:10px;
+			left:60px;
+			margin:0;
+		}
+		div#about p {
+			font-family: 'Arimo', sans-serif;
+			position:absolute;
+			font-size:10pt;
+			right:20px;
+			top:60px;
+			text-align:justify;
+			color:rgb(50,50,50);
+			line-height:150%;
+		}
+
+		</style>
+		 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  		<script src="{% static 'js/jquery.slides.min.js' %}"></script>
+  		 <script>
+		    $(function(){
+		      $("#slides").slidesjs({
+		        width: 600,
+		        height: 400
+		      });
+		    });
+  		</script>
+	</head>
+	<body>
+	<div class="wrapper">
+		{% include 'header.html' %}
+		<div id="slides">
+		   <img src="{% static 'images/1.jpg' %}">
+		   <img src="http://placehold.it/940x528">
+		</div>
+		<div id="about">
+			<img src="{% static 'images/multiple25.png' %}">
+			<h2>About us</h2>
+			<p>
+			At Avanti Interiors we specialise in office partitions and suspended ceilings. We can assist in your design and offer advice if required. We offer a complete service that can include mezzanine floors, air conditioning, heating and plumbing, electrics and data, decoration, flooring, fire proofing, soundproofing and insulation and office furniture. <br>
+			<br>
+			We have had many years experience working for many large companies to very small companies. All our contractors are bona fide, long established, qualified Tradesmen.
+			</p>
+			</div>
+	</div>
+	{% include 'footer.html' %}
+</body>
+
+</HTML>

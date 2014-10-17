@@ -1,0 +1,101 @@
+{% load staticfiles %}
+<!doctype html>
+<HTML>
+	<head>
+		<link href='http://fonts.googleapis.com/css?family=Arimo:700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    	<link href="{% static 'css/header.css'%}" rel='stylesheet' type='text/css'>
+    	<link href="{% static 'css/slides.css'%}" rel='stylesheet' type='text/css'>
+		<title>Avanti Interiors</title>
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<style>
+		div#container {
+			position: relative;
+			min-height:700px;
+			width:100%;
+			padding-top:100px;
+		}
+			div.column {
+				position:absolute;
+				width:30%;
+				height:500px;
+
+			}
+			div#leftColumn {
+				left:3%;
+			}
+			div#middleColumn {
+				left:35%;
+
+			}
+			div#rightColumn {
+				left:67%;
+			}
+			div.endorsementTop, div.endorsementMiddle, div.endorsementBottom {
+				position: relative;
+				background-color: rgba(40,40,40,0.7);
+				height:200px;
+				width:100%;
+			}
+			div.endorsementMiddle {
+				top:15px;
+			}
+			div.endorsementBottom {
+				top:30px;
+			}
+			div#container p {
+				font-family: 'Arimo', sans-serif;
+				color:white;
+				text-align: center;
+				font-size:12pt;
+				padding-top:95px;
+			}
+		</style>
+
+	</head>
+	<body>
+	<div class="wrapper">
+		{% include 'header.html' %}
+		<script>
+			document.getElementById('endorsements').id = "active";
+		</script>
+		<div id="container">
+		<div class="column" id="leftColumn">
+			<div class="endorsementTop">
+				<p>Endorsement</p>
+			</div>
+			<div class="endorsementMiddle">
+				<p>Endorsement</p>
+			</div>
+			<div class="endorsementBottom">
+				<p>Endorsement</p>
+			</div>
+		</div>
+		<div class="column" id="middleColumn">
+			<div class="endorsementTop">
+				<p>Endorsement</p>
+			</div>
+			<div class="endorsementMiddle">
+				<p>Endorsement</p>
+			</div>
+			<div class="endorsementBottom">
+				<p>Endorsement</p>
+			</div>
+		</div>
+		<div class="column" id="rightColumn">
+			<div class="endorsementTop">
+				<p>Endorsement</p>
+			</div>
+			<div class="endorsementMiddle">
+				<p>Endorsement</p>
+			</div>
+			<div class="endorsementBottom">
+				<p>Endorsement</p>
+			</div>
+		</div>
+	</div>
+	</div>
+	{% include 'footer.html' %}
+</body>
+
+</HTML>
