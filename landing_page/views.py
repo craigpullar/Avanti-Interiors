@@ -32,3 +32,7 @@ def electrics(request):
 def office(request):
 	template = "office.html"
 	return render(request, template)
+
+def drylining(request):
+	template = "drylining.html"
+	return render(request, template)
