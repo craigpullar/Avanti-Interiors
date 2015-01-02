@@ -1,0 +1,30 @@
+{% load staticfiles %}
+<!doctype html>
+<HTML>
+	<head>
+		<link href='http://fonts.googleapis.com/css?family=Arimo:700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+		<link href="{% static 'css/header.css'%}" rel='stylesheet' type='text/css'>
+		<link href="{% static 'css/infoLayout.css'%}" rel='stylesheet' type='text/css'>
+		<title>Avanti Interiors</title>
+	</head>
+
+	<body>
+	<div class="wrapper">
+		{% include 'header.html' %}
+	<script>
+		document.getElementById('office').id = "active";
+	</script>
+	<div id="infoBox1" class="infoBox">
+		<h2>Office Refurbishment</h2>
+			Avanti can provide your company with a total or partial refurbishment of your office space. Sometimes when a company relinquishes it's office space,the landlord will require it to be re-instated to how the premises looked prior to your occupance. In some circumstances they may try to charge exorbitant rates for the work. Avanti are experienced in this area and can carry out the work at a fraction of the cost.
+		</p>
+	</div>
+	<img id="image1" src="{% static 'images/82265.jpg' %}">
+	</div>
+	<footer>
+    	<p>Avanti Interiors &copy; 2014</p>
+  	</footer>
+</body>
+
+</HTML>
