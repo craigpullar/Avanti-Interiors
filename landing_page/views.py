@@ -20,3 +20,7 @@ def other(request):
 def endorsements(request):
 	template='endorsements.html'
 	return render(request,template)
+
+def mezzanine(request):
+	template = "mezzanine.html"
+	return render(request, template)
