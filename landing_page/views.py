@@ -24,3 +24,7 @@ def endorsements(request):
 def mezzanine(request):
 	template = "mezzanine.html"
 	return render(request, template)
+
+def electrics(request):
+	template = "electrics.html"
+	return render(request, template)
