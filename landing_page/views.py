@@ -40,3 +40,7 @@ def drylining(request):
 def decoration(request):
 	template = "decoration.html"
 	return render(request, template)
+
+def heating(request):
+	template = "heating.html"
+	return render(request, template)

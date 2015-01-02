@@ -1,0 +1,34 @@
+{% load staticfiles %}
+<!doctype html>
+<HTML>
+	<head>
+		<link href='http://fonts.googleapis.com/css?family=Arimo:700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+		<link href="{% static 'css/header.css'%}" rel='stylesheet' type='text/css'>
+		<link href="{% static 'css/infoLayout.css'%}" rel='stylesheet' type='text/css'>
+		<title>Avanti Interiors</title>
+	</head>
+
+	<body>
+	<div class="wrapper">
+		{% include 'header.html' %}
+	<script>
+		document.getElementById('heating').id = "active";
+	</script>
+	<div id="infoBox1" class="infoBox">
+		<h2>Heating &amp Air-Conditioning</h2>
+		<p>
+			Avanti will provide a heating and plumbing service to meet your requirements.
+			It maybe a kitchen, Toilets or heating. Our heating and Plumbing engineers are
+			experienced, qualified tradesmen. We pride ourselves on expert work. We can also 
+			provide you with air-conditioning that can double-up as heating.
+		</p>
+	</div>
+	<img id="image1" src="{% static 'images/82265.jpg' %}">
+	</div>
+	<footer>
+    	<p>Avanti Interiors &copy; 2014</p>
+  	</footer>
+</body>
+
+</HTML>
