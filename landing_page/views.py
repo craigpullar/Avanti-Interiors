@@ -28,3 +28,7 @@ def mezzanine(request):
 def electrics(request):
 	template = "electrics.html"
 	return render(request, template)
+
+def office(request):
+	template = "office.html"
+	return render(request, template)
