@@ -9,6 +9,7 @@ urlpatterns = patterns('',
     url(r'^electrics$',views.electrics, name='electrics'),
     url(r'^office$',views.office, name='office'),
     url(r'^drylining$',views.drylining, name='drylining'),
+    url(r'^decoration$',views.decoration, name='decoration'),
     # url(r'^other$',views.other, name='other'),
     # url(r'^endorsements$',views.endorsements, name='endorsements'),
 )

@@ -1,0 +1,31 @@
+{% load staticfiles %}
+<!doctype html>
+<HTML>
+	<head>
+		<link href='http://fonts.googleapis.com/css?family=Arimo:700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+		<link href="{% static 'css/header.css'%}" rel='stylesheet' type='text/css'>
+		<link href="{% static 'css/infoLayout.css'%}" rel='stylesheet' type='text/css'>
+		<title>Avanti Interiors</title>
+	</head>
+
+	<body>
+	<div class="wrapper">
+		{% include 'header.html' %}
+	<script>
+		document.getElementById('decoration').id = "active";
+	</script>
+	<div id="infoBox1" class="infoBox">
+		<h2>Decoration, Tape &amp; Jointing</h2>
+		<p>
+			Avanti only use top quality painters and decorators as well as experienced tape and jointers.
+		</p>
+	</div>
+	<img id="image1" src="{% static 'images/82265.jpg' %}">
+	</div>
+	<footer>
+    	<p>Avanti Interiors &copy; 2014</p>
+  	</footer>
+</body>
+
+</HTML>

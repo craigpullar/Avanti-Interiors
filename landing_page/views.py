@@ -36,3 +36,7 @@ def office(request):
 def drylining(request):
 	template = "drylining.html"
 	return render(request, template)
+
+def decoration(request):
+	template = "decoration.html"
+	return render(request, template)
